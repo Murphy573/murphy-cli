@@ -95,7 +95,8 @@ async function run() {
         );
         spinner.fail(`拉取远程仓库失败！`);
       } else {
-        spinner.succeed(chalk.green('项目初始化完成'));
+        spinner.succeed(chalk.green('项目模板初始化完成'));
+        friendlyPromt(rawName);
       }
     });
   } catch (error) {
@@ -104,4 +105,24 @@ async function run() {
       'Error: ' + JSON.stringify(error) + ': ' + error.message.trim(),
     );
   }
+}
+
+/**
+ * 友情提示
+ */
+function friendlyPromt(projectName) {
+  console.log();
+  console.log();
+
+  console.log(
+    `  您可能需要进入 ${chalk.yellowBright(projectName)} 目录，做以下操作：`,
+  );
+  console.log(
+    `    1. 打开 ${chalk.greenBright(
+      'package.json',
+    )}，按需修改name、version、description 等字段`,
+  );
+  console.log(`    2. 按需修改 ${chalk.greenBright('.env.*')} 环境配置文件`);
+  console.log(`    3. 按需修改 ${chalk.greenBright('vue.config.js')} 配置文件`);
+  console.log(`    4. 执行 ${chalk.greenBright('npm i ')}`);
 }
