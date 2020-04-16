@@ -24,7 +24,7 @@ $ murphy create my-project
 
 ### 请修改
 
-- 打开 `package.json`，按需修改 `name`、`description`、`description` 等字段
+- 打开 `package.json`，按需修改 `name`、`version`、`description` 等字段
 
 - 按需修改 `.env.*` 环境配置文件
 
