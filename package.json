@@ -1,0 +1,31 @@
+{
+  "name": "murphy-cli",
+  "version": "0.0.1",
+  "description": "template generate",
+  "bin": {
+    "murphy": "bin/murphy.js",
+    "murphy-create": "bin/murphy-create.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Murphy573/murphy-cli.git"
+  },
+  "keywords": [
+    "vue",
+    "cli",
+    "spa"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "lipf",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^4.0.0",
+    "commander": "^5.0.0",
+    "download-git-repo": "^3.0.2",
+    "handlebars": "^4.7.6",
+    "inquirer": "^7.1.0",
+    "ora": "^4.0.3"
+  }
+}
