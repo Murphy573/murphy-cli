@@ -22,7 +22,7 @@ $ murphy create my-project
 
 **该命令将在 my-project 目录下生成对应项目模板**
 
-### 请修改
+### 您可能需要修改
 
 - 打开 `package.json`，按需修改 `name`、`version`、`description` 等字段
 
