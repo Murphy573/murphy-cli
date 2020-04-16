@@ -14,7 +14,7 @@ $ npm install -g murphy-cli
 $ murphy create <project-name>
 ```
 
-示例
+### 示例
 
 ```bash
 $ murphy create my-project
