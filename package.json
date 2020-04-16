@@ -2,6 +2,9 @@
   "name": "murphy-cli",
   "version": "0.0.1",
   "description": "template generate",
+  "author": "lipf",
+  "license": "ISC",
+  "private": false,
   "bin": {
     "murphy": "bin/murphy.js",
     "murphy-create": "bin/murphy-create.js"
@@ -13,13 +16,12 @@
   "keywords": [
     "vue",
     "cli",
-    "spa"
+    "spa",
+    "murphy"
   ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "lipf",
-  "license": "ISC",
   "dependencies": {
     "chalk": "^4.0.0",
     "commander": "^5.0.0",
